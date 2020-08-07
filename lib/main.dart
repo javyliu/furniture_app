@@ -13,7 +13,11 @@ class MyApp extends StatelessWidget {
       title: 'Furniture tutorial',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-
+        appBarTheme: AppBarTheme(
+          color: Colors.transparent,
+          brightness: Brightness.light,
+          elevation: 0
+        ),
         scaffoldBackgroundColor: Colors.white,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),

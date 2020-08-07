@@ -13,7 +13,9 @@ class SizeConfig{
     screenHeight = _mediaQueryData.size.height;
     orientation = _mediaQueryData.orientation;
 
-    defaultSize = orientation == Orientation.landscape ? screenHeight * 0.024 : screenHeight * 0.024;
+    print("orientation: $orientation, ${orientation == Orientation.landscape}");
+
+    defaultSize = orientation == Orientation.landscape ? screenHeight * 0.024 : screenWidth * 0.024;
   }
 
 

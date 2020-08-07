@@ -11,6 +11,7 @@ Future<List<Category>> fetchCategories() async {
 
   if(response.statusCode == 200){
     List<Category> categories = (json.decode(response.body) as List).map((e) => Category.fromJson(e)).toList();
+    print(categories);
     return categories;
 
   }else{
