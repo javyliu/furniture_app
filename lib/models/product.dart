@@ -22,7 +22,7 @@ Product product = Product(
   id: "1",
   price: 1600,
   title: "Wood Frame",
-  image: "assets/images/img_1.png",
+  image: "http://192.168.30.39/1.png",
   category: "Chair",
   subTitle: "Tieton Armchair",
   description: description,
