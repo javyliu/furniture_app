@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:furniture_app/constant.dart';
 import 'package:furniture_app/models/product.dart';
 
 import '../../size_config.dart';
@@ -14,6 +15,7 @@ class DetailScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     SizeConfig().init(context);
     return Scaffold(
+      backgroundColor: secondaryColor,
       appBar: buildAppBar(context),
       body: Body(product: product,),
     );
